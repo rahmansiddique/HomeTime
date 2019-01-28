@@ -8,7 +8,7 @@ jobs:
 
     # Specify the Xcode version to use
     macos:
-      xcode: "8.3.3"
+      xcode: "10.1"
 
     steps:
       - checkout
@@ -23,8 +23,8 @@ jobs:
           name: Build and run tests
           command: fastlane scan
           environment:
-            SCAN_DEVICE: iPhone 6
-            SCAN_SCHEME: WebTests
+            SCAN_DEVICE: iPhone X
+            SCAN_SCHEME: HomeTimeUITests
 
       # Collect XML test results data to show in the UI,
       # and save the same XML files under test-results folder
